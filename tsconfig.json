@@ -1,0 +1,51 @@
+{
+  //指定那些ts文件需要被编译
+  //路径：**表示任意目录
+  //     *表示任意文件
+  "include": [
+    "./src/**/*"
+  ],
+
+  "compilerOptions": {
+    //指定要使用的模块化的规范
+    "module": "ES6",
+    //指定ts被编译的版本
+    "target": "ES6",
+    //lib用来指定项目中要用到的库,一般不用设置
+    //    "lib": [
+    //      "DOM",
+    //      "ES6"
+    //    ],
+    //指定编译后文件所在的目录
+    "outDir": "./dist",
+    //将我们的代码合并为一个文件,如果使用模块化编程，需要将
+    //module指定为system或者amd模式
+    //    "outFile": "./dist/app.js",
+    //是否对js文件进行编译:默认是false
+    //    "allowJs": true,
+    //是否检查js文件是否符合语法要求
+    //    "checkJs": false,
+    //编译时忽略注释
+    //    "removeComments": false,
+    //不生成编译成的文件
+    //    "noEmit": false
+    //当有错误不生成编译后的文件
+    //    "noEmitOnError": false,
+    //对编译后的文件开启严格模式
+    //    "alwaysStrict": true,
+    //不允许隐性any类型存在
+    //    "noImplicitAny": true,
+    //不允许不明确类型的this
+    //    "noImplicitThis": true,
+    //严格检查空值
+    //    "strictNullChecks": true,
+    //开启全部严格检查
+    "strict": true,
+    "sourceMap": true,
+    "noEmitOnError": true
+  },
+  //指定哪些文件不需要被编译，有默认值，一般不需要设置
+  "exclude": [
+    "node_modules"
+  ]
+}
